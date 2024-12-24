@@ -1,95 +1,111 @@
 h1 {
-  display: flex;
-  justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 55px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 55px;
 }
-
 .btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
- #new-book-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75px;
-  padding: 5px;
-  margin: 10px;
-  background-color: rgb(227, 234, 235);
-  border-radius: 15px;
-  border: solid 3px black;
-  font-size: larger;
+#new-book-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75px;
+	padding: 5px;
+	margin: 10px;
+  margin-right: 125px;
+	background-color: rgb(227, 234, 235);
+	border-radius: 15px;
+	border: solid 3px black;
+	font-size: larger;
+}
+#new-book-btn:hover {
+	background-color: rgb(156, 86, 221);
+	transition-duration: 0.4s;
 }
 #new-book-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  margin-left: 700px;
-  margin-right: 700px;
-  background-color: rgb(204, 196, 85);
-  border-radius: 25px;
+	display: flex;
+	justify-content:center;
+	align-items:start;
+	margin: 40px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-left: 580px;
+	margin-right: 700px;
+	border: 1px solid;
+	border-radius: 25px;
 }
 label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 25px;
 }
-
 input#title {
-  height: 30px;
-  width: 200px;
-  font-size: 20px;
-  border: solid 3px black;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: solid 3px black;
 }
 input#author {
-  height: 30px;
-  width: 200px;
-  font-size: 20px;
-  border: solid 3px black;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: solid 3px black;
 }
 input#pages {
-  height: 30px;
-  width: 200px;
-  font-size: 20px;
-  border: solid 3px black;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: solid 3px black;
 }
 input#read {
-  height: 30px;
-  width: 200px;
-  font-size: 20px;
-  border: solid 3px black;
-  margin-bottom: 25px;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	border: solid 3px black;
+	margin-bottom: 25px;
 }
 input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 175px;
-  margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 175px;
+	margin-bottom: 10px;
 }
 #submit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
-  height: 30px;
-  width: 100px;
-  margin-left: 225px;
-  font-size: 20px;
-  border: solid 3px black;
-  margin-bottom: 25px;
-  background-color: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	height: 30px;
+	width: 100px;
+	margin-left: 225px;
+	font-size: 20px;
+	border: solid 3px rgb(0, 0, 0);
+	margin-bottom: 25px;
 }
-
+#submit-btn:hover{
+  background-color: rgb(50, 160, 23);
+  transition-duration: 0.4s;
+}
 #library {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+}
+.book-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	margin: 50px;
+	border: 1px solid;
+	width:250px;
+	height: 250px;
+	font-family: 'Courier New', Courier, monospace;
 }

@@ -9,12 +9,22 @@ function Book(title,author,pages,read){
     this.read = read; 
 }
 
+Book.prototype.toggle = function () {
+    this.read = !this.read;
+}
+
+function toggle(index){
+    myLibrary[index].toggle();
+    update();
+}
+
 function update(){
     const library = document.querySelector("#library");
     library.innerHTML = "";
     for (let i = 0; i < myLibrary.length; i++){
         let book = myLibrary[i];
         let bookE = document.createElement("div");
+        bookE.setAttribute("class", "book-card")
         bookE.innerHTML = `<div class="card">
                             <h3 class="card-title">${book.title}</h3>
                             <h5 class="author">${book.author}</h5>
@@ -22,9 +32,16 @@ function update(){
                            <div class="card-body">
                            <p>${book.pages} pages</p>
                            <p class="status">${book.read ? "Read" : "Not read"}</p>
+                           <button class = "remove-btn" onclick="removeBook(${i})">Remove</button>
+                           <button class = "toggle-read-btn" onclick="toggle(${i})">Toggle read</button>
                            </div>`;
         library.appendChild(bookE);
     }
+}
+
+function removeBook(index){
+    myLibrary.splice(index,1);
+    update();
 }
 
 function addBook(){
